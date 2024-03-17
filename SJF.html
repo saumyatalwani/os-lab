@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling Algorithms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="p-10 bg-blue-100">
+
+    <h1 class="text-4xl font-bold">Scheduling Algorithms - Shortest Job First (SJF)</h1>
+    <div class="p-5">
+        <label for="processes">Number of Processes:</label>
+        <input type="number" id="processes" name="processes" min="1" step="1" value="1" class="py-2 px-4 rounded-full">
+        <button id="generate" class="rounded-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 mt-2">Generate Processes</button>
+    </div>
+    <table id="process-table">
+        <thead>
+            <tr>
+                <th>Process ID</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+                <th>Waiting Time</th>
+                <th>Turnaround Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" class="process-id py-2 px-4 rounded-full" value="P1" disabled></td>
+                <td><input type="number" class="arrival-time py-2 px-4 rounded-full" min="0" step="1" value="0"></td>
+                <td><input type="number" class="burst-time py-2 px-4 rounded-full" min="1" step="1" value="1"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="calculate" class="rounded-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 mt-2">Calculate</button>
+    <div id="output"></div>
+
+    <script src="SJF.js"></script>
+</body>
+
+</html>
