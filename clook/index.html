@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling Algorithms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-10 bg-blue-100">
+    <h1 class="text-4xl font-bold">C-LOOK Disk Scheduling</h1>
+    <div class="p-5">
+        <label for="inputSeq">Input Sequence: </label>
+        <input type="text" id="inputSeq" class="py-2 px-4 rounded-full">
+
+        <label for="head">Head Count: </label>
+        <input type="number" min="0" value="0" id="head" class="py-2 px-4 rounded-full">
+
+
+        <button id="generate" class="rounded-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 mt-2">Calculate</button>
+    </div>
+    <div id="output">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+
+</html>
