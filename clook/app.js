@@ -72,6 +72,4 @@ document.addEventListener("DOMContentLoaded", function(){
         output.appendChild(text2);
         chart.render();
     })
-    
-
 })

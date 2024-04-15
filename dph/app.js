@@ -49,7 +49,7 @@ class Philosopher {
     
         this.state = 'eating';
         this.updateUI();
-        console.log(`${this.name} is eating`);
+        //console.log(`${this.name} is eating`);
         await this.sleep(2000); // Delay for visibility
     
         await this.putDownForks();
@@ -76,7 +76,7 @@ class Philosopher {
     }
 
     updateUI() {
-        console.log('upd');
+        //console.log('upd');
         const stateClass = this.state === 'eating' ? 'eating' : this.state === 'thinking' ? 'thinking' : 'waiting';
         this.element.innerHTML = `<div>${this.name}</div><div class="${stateClass}">${this.state}</div>`;
     }
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function(){
             });
             await Promise.all(eatingPromises);
             document.getElementById('philosophers-container').innerHTML+="All philosophers have finished dining";
-            console.log('All philosophers have finished dining.');
+            //console.log('All philosophers have finished dining.');
         }
         simulateDinner();
         }
