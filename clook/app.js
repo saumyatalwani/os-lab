@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
             return {"y" : element};
         })
         seq.unshift({ "y" : headCount});
-        console.log(out);
+        //console.log(out);
         var chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
             theme: "light2",

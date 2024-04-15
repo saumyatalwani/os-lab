@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>First-In First-Out (FIFO) Page Replacement Algorithm</title>
+</head>
+<body class="p-10 bg-blue-100">
+    <h1 class="text-4xl font-bold">First-In First-Out (FIFO) Page Replacement Algorithm</h1>
+    <div class="p-5">
+        <label for="pageSeq">Pages :  </label>
+        <input type="text" id="pageSeq" class="py-2 px-4 rounded-full">
+
+        <label for="queueSize">Queue Size : </label>
+        <input type="number" min="0" value="0" id="queueSize" class="py-2 px-4 rounded-full">
+
+
+        <button id="generate" class="rounded-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 mt-2">Calculate</button>
+    </div>
+
+    <div class="p-5" id="output"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
