@@ -22,9 +22,11 @@ function clook(inputSequence, head){
         seekCount += Math.abs(head - right[i]);
         head = right[i];
     }
-
-    seekCount += Math.abs(head - left[0]);
-    head = left[0];
+    
+    if(left.length!==0){
+        seekCount += Math.abs(head - left[0]);
+        head = left[0];
+    }
 
     for(let i = 0; i < left.length; i++) {
         seekSequence.push(left[i]);
