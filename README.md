@@ -8,7 +8,6 @@ This repository contains a collection of simulations implemented for an Operatin
 1. [Overview](#overview)  
 2. [Features](#features)  
 3. [Simulated Algorithms](#simulated-algorithms)  
-4. [Installation](#installation)  
 
 ---
 
